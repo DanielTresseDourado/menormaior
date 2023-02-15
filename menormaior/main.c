@@ -5,21 +5,21 @@ main() {
 	int a;
 	int b;
 
-	printf("primeiro número:");
-	scanf("%d", &a);
-	printf("segundo número:");
-	scanf("%d", &b);
-
 	while (1) {
+		setlocale(LC_ALL, "Portuguese");
+		printf("primeiro número:");
+		scanf_s("%d", &a);
+		printf("segundo número:");
+		scanf_s("%d", &b);
 
 		if (a > b) {
-			printf("primeiro numero maior que o segundo");
+			printf("primeiro número é maior que o segundo\n\t");
 		}
 		else if (a < b) {
-			printf("primeiro numero menor que o segundo");
+			printf("primeiro número é menor que o segundo\n\t");
 		}
-		else(a == b) {
-			printf("primeiro numero igual ao segundo");
+		else {
+			printf("primeiro numero é igual ao segundo\n\t");
 		}
 	}
 }
